@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-svc
+  labels:
+    app: flask-helloworld
+spec:
+  type: LoadBalancer 
+  ports:
+  - port: 80
+    targetPort: 5000
+    protocol: TCP
+  selector:
+    app: flask-helloworld
