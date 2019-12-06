@@ -1,3 +1,6 @@
+![Getting Started with Containers and Kubernetes Header Image](https://github.com/do-community/k8s-intro-meetup-kit/blob/master/header.png?raw=true)
+
+
 # Getting Started with Containers and Kubernetes: A DigitalOcean Meetup Kit
 
 This repository equips a speaker with the materials necessary to deliver a roughly 45-minute-long introductory talk on containers and Kubernetes.
