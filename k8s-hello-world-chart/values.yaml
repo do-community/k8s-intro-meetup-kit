@@ -4,6 +4,10 @@
 
 replicaCount: 1
 
+app:
+  link: "https://github.com/BoazHalter/k8s-hello-world"
+  route: "/sample/"
+  
 image:
   repository: digitalocean/flask-helloworld
   pullPolicy: IfNotPresent
