@@ -25,4 +25,3 @@ metadata:
         f:app.py: {}
     manager: kubectl
   name: sample-app-configmap
-  namespace: sample
