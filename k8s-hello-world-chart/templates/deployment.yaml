@@ -35,7 +35,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
             - name: sample-app-configmap
-              mountPath: /app/app,py
+              mountPath: /app/app.py
           ports:
             - name: http
               containerPort: 5000
