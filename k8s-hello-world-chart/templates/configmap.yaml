@@ -10,7 +10,7 @@ data:
     @app.route('{{.Values.app.route }}')
     def hello_world():
        s = urllib.parse.quote('{{.Values.app.link }}')
-       return 'https://'+s'
+       return 'https://'+s
 
     if __name__ == "__main__":
         app.run(debug=True, host='0.0.0.0')
