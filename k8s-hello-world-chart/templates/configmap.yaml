@@ -8,8 +8,12 @@ data:
     app = Flask(__name__)
 
     @app.route('{{.Values.app.route }}')
+    
     def hello_world():
-       return (f"\u001b]8;;{https://{{.Values.app.link }}}\u001b\u001b]8;;\u001b\\") 
+       text = "This is a link to the Github repo with Dockerfile and chart"
+       target = "https://{{.Values.app.link }}"
+       return(f"\u001b]8;;{target}\u001b\\{text}\u001b]8;;\u001b\\")
+        
        
 
     if __name__ == "__main__":
