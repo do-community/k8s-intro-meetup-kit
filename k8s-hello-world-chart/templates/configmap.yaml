@@ -7,9 +7,9 @@ data:
     
     app = Flask(__name__)
 
-    @app.route('/sample/')
+    @app.route('{{.Values.app.route }}')
     def hello_world():
-       s = urllib.parse.quote('https://github.com/BoazHalter/k8s-hello-world')
+       s = urllib.parse.quote('{{.Values.app.link }}')
        return 'https://'+s'
 
     if __name__ == "__main__":
