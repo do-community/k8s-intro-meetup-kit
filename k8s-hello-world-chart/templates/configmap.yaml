@@ -11,7 +11,7 @@ data:
     
     def hello_world():
        text = "This is a link <a href= {} > to the Github repo with Dockerfile and chart".format("https://{{.Values.app.link }}")
-       return('text')
+       return(text)
         
        
 
