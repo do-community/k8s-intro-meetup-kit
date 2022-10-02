@@ -10,9 +10,10 @@ data:
     @app.route('{{.Values.app.route }}')
     
     def hello_world():
+       
        text = "This is a link to the Github repo with Dockerfile and chart"
        target = "https://{{.Values.app.link }}"
-       return(f"\u001b]8;;{target}\u001b\\{text}\u001b]8;;\u001b\\")
+       return(<href=target>)
         
        
 
