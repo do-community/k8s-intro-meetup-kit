@@ -5,7 +5,7 @@
 replicaCount: 1
 
 app:
-  link: "github.com/BoazHalter/k8s-hello-world"
+  link: github.com/BoazHalter/k8s-hello-world
   route: "/sample/"
   
 image:
