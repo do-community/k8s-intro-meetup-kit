@@ -34,11 +34,11 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
-            - name: config-volume
+            - name: sample-app-configmap
               mountPath: /app/app,py
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 5000
               protocol: TCP
           livenessProbe:
             httpGet:
@@ -63,8 +63,8 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       volumes:
-        - name: config-volume
+        - name: sample-app-configmap
           configMap:
             # Provide the name of the ConfigMap containing the files you want
             # to add to the container
-            name: special-config
+            name: sample-app-configmap
